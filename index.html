@@ -29,10 +29,13 @@
 <script>
   // Passwortschutz
   const password = prompt("Bitte Passwort eingeben:");
-  if (password !== "WATER") {
-    document.body.innerHTML = "Zugriff verweigert.";
+  if (password !== "ALLESWASSER") {
+    alert("Zugriff verweigert.");
+   window.location.href = "./error.html"; // Leitet zur Fehlerseite im gleichen Verzeichnis weiter
+ // Leitet den Benutzer auf eine andere Seite um
   }
 </script>
+
 	  
 	  <header class="u-clearfix u-container-align-right u-custom-color-33 u-header u-header" id="sec-a88b" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
       
