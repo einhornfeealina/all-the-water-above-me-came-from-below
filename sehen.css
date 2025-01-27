@@ -859,24 +859,24 @@
 }
 
 .u-section-20 .u-text-1 {
-  letter-spacing: 4px;
-  font-size: 2.25rem;
-  margin: 438px 570px 0 0;
+  margin: 438px 0 0 570px;
 }
 
 .u-section-20 .u-btn-1 {
+  font-size: 2.25rem;
   padding: 0;
 }
 
 .u-section-20 .u-text-2 {
   letter-spacing: 4px;
-  margin: -40px 0 60px 570px;
+  font-size: 2.25rem;
+  margin: -40px 570px 60px 0;
 }
 
 .u-section-20 .u-btn-2 {
+  font-size: 2.25rem;
   padding: 0;
 }
-
 @media (max-width: 991px) {
   .u-section-20 .u-text-1 {
     margin-right: 350px;
