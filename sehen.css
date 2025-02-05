@@ -1,4 +1,5 @@
- .u-section-1 {
+
+.u-section-1 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,13 +17,13 @@
 
 @media (max-width: 767px) {
   .u-section-1 .u-text-1 {
-    font-size: 1.875rem;
+    font-size: 2.25rem;
   }
 }
 
 @media (max-width: 575px) {
   .u-section-1 .u-text-1 {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
   }
 }.u-section-2 .u-sheet-1 {
   min-height: 296px;
@@ -214,6 +215,7 @@
   margin: -413px auto 0;
 }
 
+
 @media (max-width: 1199px) {
   .u-section-6 .u-image-2 {
     margin-left: 631px;
@@ -245,18 +247,27 @@
   }
 }
 
+/*CHAT*/
+
 @media (max-width: 575px) {
+  /* Sektion wird auf mobilen Geräten sichtbar gemacht und zentriert */
   .u-section-6 .u-sheet-1 {
-    min-height: 1536px;
+    min-height: auto;   /* Höhe der Sektion wird automatisch angepasst */
+    text-align: center;  /* Zentriert die Bilder */
   }
 
-  .u-section-6 .u-image-1 {
-    margin-left: auto;
+  /* Alle Bilder untereinander anordnen */
+  .u-section-6 .u-image-1,
+  .u-section-6 .u-image-2,
+  .u-section-6 .u-image-3 {
+    width: 90%;           /* Jedes Bild nimmt 90% der Breite des Containers ein */
+    height: auto;         /* Höhe bleibt proportional */
+    margin: 20px auto;    /* Abstand zwischen den Bildern */
+    display: block;       /* Bilder untereinander anzeigen */
   }
+}
 
-  .u-section-6 .u-image-2 {
-    margin-left: auto;
-  }
+
 } .u-section-7 {
   min-height: 1004px;
 }
@@ -575,6 +586,8 @@
   .u-section-13 .u-image-2 {
     margin-left: auto;
   }
+
+
 }.u-section-14 .u-sheet-1 {
   min-height: 294px;
 }
@@ -599,6 +612,8 @@
   .u-section-14 .u-text-1 {
     margin-right: 0;
   }
+    
+    
 } .u-section-15 {
   min-height: 955px;
 }
@@ -679,25 +694,53 @@
 }
 
 @media (max-width: 575px) {
-   .u-section-15 {
-    min-height: 1355px;
+  .u-section-15 {
+    min-height: auto;
+    text-align: center;
+    padding-bottom: 150px; /* Mehr Abstand zur nächsten Sektion */
   }
 
   .u-section-15 .u-image-1 {
-    width: 340px;
-    height: 453px;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
   }
 
-  .u-section-15 .u-image-2 {
-    margin-top: 78px;
-    margin-left: calc(((100% - 340px) / 2) + 115px);
-    margin-right: auto;
-  }
-
+  .u-section-15 .u-image-2,
   .u-section-15 .u-image-3 {
-    margin-top: 78px;
-    margin-right: calc(((100% - 340px) / 2));
+    width: 225px;  /* Beide Bilder gleich breit */
+    height: 300px; /* Höhe manuell setzen für das korrekte Format */
+    display: inline-block;
+    margin: 25px; /* Abstand zwischen den Bildern */
+    object-fit: cover; /* Bild wird passend zugeschnitten */
   }
+}
+
+/* aus Chat */
+
+/* Für mobile Geräte (max-width: 575px) */
+@media (max-width: 575px) {
+  /* Die Sektion wird auf mobilen Geräten sichtbar gemacht */
+  .u-section-13 {
+    display: block;
+    text-align: center;
+    min-height: auto;
+  }
+
+  /* Alle Bilder untereinander anordnen */
+  .u-section-13 .u-image-1,
+  .u-section-13 .u-image-2,
+  .u-section-13 .u-image-3 {
+    width: 100%;  /* Jedes Bild nimmt die volle Breite des Containers ein */
+    height: auto; /* Höhe wird automatisch angepasst */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block; /* Bilder untereinander anzeigen */
+  }
+}
+
+
 } .u-section-16 {
   min-height: 913px;
   background-image: none;
@@ -706,6 +749,7 @@
 .u-section-16 .u-image-1 {
   width: 447px;
   height: 462px;
+    box-shadow: 0px 0px 20px 10px rgba(255,255,255,0.1);
   object-position: 50% 5.22%;
   margin: 45px auto 0 calc(((100% - 1140px) / 2));
 }
@@ -772,7 +816,7 @@
     height: 454px;
     margin-top: 74px;
     margin-right: auto;
-    margin-bottom: 16px;
+    margin-bottom: 200px;
   }
 }.u-section-17 .u-sheet-1 {
   min-height: 299px;
@@ -859,53 +903,68 @@
 }
 
 .u-section-20 .u-text-1 {
-  letter-spacing: 4px;
-  font-size: 2.25rem;
-  margin: 438px 570px 0 0;
+  margin: 438px 0 0 570px;
 }
 
 .u-section-20 .u-btn-1 {
+  font-size: 2.25rem;
   padding: 0;
 }
 
 .u-section-20 .u-text-2 {
   letter-spacing: 4px;
-  margin: -40px 0 60px 570px;
+  font-size: 2.25rem;
+  margin: -40px 570px 60px 0;
 }
 
 .u-section-20 .u-btn-2 {
+  font-size: 2.25rem;
   padding: 0;
 }
+
 @media (max-width: 991px) {
   .u-section-20 .u-text-1 {
-    margin-right: 350px;
+    width: auto;
+    margin-top: 60px;
+    margin-left: 350px;
   }
 
   .u-section-20 .u-text-2 {
     width: auto;
-    margin-left: 350px;
+    margin-right: 360px;
+    margin-left: -10px;
   }
 }
 
 @media (max-width: 767px) {
   .u-section-20 .u-text-1 {
-    font-size: 1.875rem;
-    margin-right: 170px;
+    margin-left: 170px;
   }
 
   .u-section-20 .u-text-2 {
-    margin-left: 170px;
+    font-size: 2.25rem;
+    margin-right: 180px;
   }
 }
 
 @media (max-width: 575px) {
   .u-section-20 .u-text-1 {
-    font-size: 1.5rem;
-    margin-right: 0;
+    margin-top: 355px;
+    margin-left: 0;
+  }
+
+  .u-section-20 .u-btn-1 {
+    font-size: 2.25rem;
   }
 
   .u-section-20 .u-text-2 {
+    margin-top: -155px;
     margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-20 .u-btn-2 {
+    font-size: 2.25rem;
   }
 }@font-face {
   font-family: 'NeueHaasDisplayBold';

@@ -1,4 +1,6 @@
- .u-section-1 {
+ 
+
+.u-section-1 {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,6 +78,7 @@
   .u-section-3 .u-text-1 {
     margin-top: 20px;
   }
+    
     
 }.u-section-4 .u-sheet-1 {
   min-height: 100vh;
@@ -201,6 +204,7 @@
     margin-left: 0;
     margin-right: 0;
   }
+    
 }@font-face {
   font-family: 'NeueHaasDisplayBold';
   font-style: normal;
@@ -216,4 +220,32 @@
   font-style: normal;
   font-weight: 400;
   src: url(fonts/NeueHaasDisplayRoman.ttf);
+}
+
+.u-section-3 .u-sheet-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.u-section-3 .person-list {
+  width: 100%;
+  max-width: 800px; /* Begrenzung der Breite für bessere Lesbarkeit */
+}
+
+.u-section-3 .person-item {
+  display: flex;
+  justify-content: space-between; /* Links Name, rechts Aufgabe */
+  width: 100%;
+  padding: 10px 0; /* Etwas Abstand zwischen den Einträgen */
+}
+
+.u-section-3 .name {
+  text-align: left;
+  flex: 1;
+}
+
+.u-section-3 .task {
+  text-align: right;
+  flex: 1;
 }
